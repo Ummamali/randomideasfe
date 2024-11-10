@@ -1,5 +1,10 @@
-body {
-  background-color: #333;
-  color: white;
-  text-align: center;
+body{
+  font-family: 'Open Sans', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+/* my custom stylings */
+
+.idea-footer span{
+  color: #111;
 }

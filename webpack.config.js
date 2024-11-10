@@ -47,7 +47,7 @@ module.exports = {
   plugins: [
     // Setting the html dynamic generator plugin
     new HtmlWebpackPlugin({
-      title: "Webpack Starter Application",
+      title: "Randomideas | Fullstack DRUD",
       filename: "index.html",
       template: "./src/index.html",
     }),
