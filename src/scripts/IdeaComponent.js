@@ -1,5 +1,13 @@
 import { createCustomElement } from "./utils";
 
+const categoryClassMappings = {
+  technology: "bg-cyan-300 text-black/90",
+  healthcare: "bg-orange-300 text-black/90",
+  energy: "bg-purple-300 text-black/90",
+  fitness: "bg-green-300 text-black/90",
+  marketing: "bg-blue-300 text-black/90",
+};
+
 export default function IdeaComponent({
   id,
   content,
@@ -7,9 +15,15 @@ export default function IdeaComponent({
   authorName,
   postDate,
 }) {
-  const delBtn = createCustomElement("btn", {
-    children: [createCustomElement("i", { class: "fa-solid fa-remove" })],
-    class: "flex justify-end",
+  const delBtn = createCustomElement("button", {
+    children: [
+      createCustomElement("i", {
+        class: "fa-solid fa-remove",
+        "data-id": id,
+        "data-purpose": "DELETE",
+      }),
+    ],
+    class: "block ml-auto hover:text-red-600",
   });
 
   const contentEl = createCustomElement("p", {
@@ -19,7 +33,9 @@ export default function IdeaComponent({
 
   const catEl = createCustomElement("p", {
     children: [category],
-    class: `text-xs bg-green-500 inline-block px-3 py-1 rounded-sm uppercase mb-3`,
+    class: `text-xs inline-block px-3 py-1 rounded-sm uppercase mb-3 ${
+      categoryClassMappings[category.toLowerCase()] || "bg-slate-200"
+    }`,
   });
 
   const footerEl = createCustomElement("p", {
