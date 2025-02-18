@@ -97,5 +97,11 @@ This project follows the **CRUD** (Create, Read, Update, Delete) methodology for
    ```bash
    git clone https://github.com/ummamali/randomideasfe.git
    cd randomideasfe
+   
+2. **Install Dependencies**  
+   ```bash
    npm install
+   
+3. **Run (Development Mode)**  
+   ```bash
    npm run dev
