@@ -105,3 +105,8 @@ This project follows the **CRUD** (Create, Read, Update, Delete) methodology for
 3. **Run (Development Mode)**  
    ```bash
    npm run dev
+
+
+## License  
+
+This project is licensed under the **MIT License**. For more details, visit [MIT License](https://opensource.org/licenses/MIT).  
